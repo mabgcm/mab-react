@@ -1,0 +1,22 @@
+.hero {
+  padding: 150px;
+  color: white;
+  text-align: center;
+  height: 100vh;
+  background-image: url('../src/assets/img/hero-bg.jpg');
+  background-size: cover;
+}
+
+.card {
+  font-size: xx-large;
+  padding: 20px;
+  height: fit-content;
+  width: 45vw;
+  margin: 20vh 0;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(1.5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
