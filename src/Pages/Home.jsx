@@ -34,7 +34,7 @@ const Home = () => {
                             .deleteChars(21)
                             .typeString('<strong style="color: #27ae60;">coffee lover! </strong>')
                             .pauseFor(1000)
-                            .typeString('Here, you can <strong style="color: #27ae60;">check his resume</strong>')
+                            .typeString('Here, you can <strong style="color: #27ae60;">find his resume</strong>')
                             .pauseFor(600)
                             .deleteChars(16)
                             .typeString('<strong style="color: #27ae60;">see his portfolio</strong>')
