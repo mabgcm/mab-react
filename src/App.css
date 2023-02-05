@@ -23,6 +23,7 @@
 
 @media only screen and (max-width: 1024px) {
   .card {
+    width: 75vw;
     margin: auto;
     font-size: 2rem;
   }
@@ -30,6 +31,7 @@
 
 @media only screen and (max-width: 600px) {
   .card {
+    width: 70vw;
     margin: auto;
     font-size: 1.8rem;
   }
@@ -37,6 +39,7 @@
 
 @media only screen and (max-width: 400px) {
   .card {
+    width: 55vw;
     margin: auto;
     font-size: 1.4rem;
   }
