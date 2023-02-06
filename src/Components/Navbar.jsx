@@ -56,10 +56,10 @@ function Navbar() {
                             fontFamily: 'Rubik',
                             fontWeight: 400,
                             letterSpacing: '.3rem',
-                            color: 'yellow',
+                            color: 'inherit',
                             textDecoration: 'none',
                             '&:hover': {
-                                color: 'yellow'
+                                color: 'inherit'
                             }
                         }}
                     >
