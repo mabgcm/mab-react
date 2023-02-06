@@ -40,7 +40,7 @@ const Home = () => {
                             .typeString('<strong style="color: #27ae60;">see his portfolio</strong>')
                             .pauseFor(300)
                             .deleteChars(17)
-                            .typeString('<strong style="color: #27ae60;">read his blogposts. </strong>')
+                            .typeString('<strong style="color: #27ae60;"> read his blogposts. </strong>')
                             .typeString('Thanks for your time to visit the page.')
                             .start();
                     }}
