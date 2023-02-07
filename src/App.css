@@ -13,7 +13,7 @@
   height: fit-content;
   width: 45vw;
   margin: 20vh 0;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.5);
   border-radius: 10px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(3px);
@@ -85,8 +85,15 @@ section {
   margin-bottom: 0;
 }
 
+.closeButton {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  cursor: pointer;
+}
+
 .resume .resume-title {
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 700;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -120,6 +127,16 @@ section {
   border-radius: 5px;
 }
 
+.sum {
+  padding-left: 30px;
+  margin-top: 15px;
+}
+
+.edu {
+  padding-left: 40px;
+  margin-top: 15px;
+}
+
 .shdw {
   box-shadow: 5px 3px 2px darkslategrey;
   cursor: pointer;
@@ -146,16 +163,61 @@ section {
   left: -9px;
   top: 0;
   background: #fff;
-  border: 2px solid #1f5297;
+  /* border: 2px solid #1f5297; */
 }
 
 .portfolio {
-  margin: 150px;
+  width: 750px;
+  margin: 150px auto;
   padding: 20px;
-  height: 80vh;
+  height: 59vh;
   /* border: #050d18 solid 1px; */
 }
 
+.paper {
+  width: 700px;
+  margin: auto;
+  padding: 20px;
+}
+
+.port-img {
+  margin: auto;
+  /* border: red solid 1px; */
+  display: flex;
+  justify-content: center;
+}
+
 .portfolio-img {
-  width: 70vw;
+  /* width: 600px; */
+  height: 300px;
+  margin: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .portfolio {
+    width: 90%;
+  }
+
+  .paper {
+    width: 99%;
+  }
+
+  .portfolio-img {
+    width: 450px;
+  }
+}
+
+@media only screen and (min-width: 360px) {
+  .portfolio {
+    width: 99%;
+  }
+
+  .paper {
+    width: 99%;
+  }
+
+  .portfolio-img {
+    width: 300px;
+    height: 150px;
+  }
 }

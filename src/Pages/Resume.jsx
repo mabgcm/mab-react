@@ -3,13 +3,20 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Modal from '@mui/material/Modal';
 import { Link } from '@mui/material';
+import CloseIcon from '@mui/icons-material/Close';
 
 const style = {
     position: 'absolute',
     top: '50%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
-    width: 900,
+    width: {
+        xs: 400,
+        sm: 600,
+        md: 600,
+        lg: 600,
+        xl: 600,
+    },
     bgcolor: 'background.paper',
     border: '2px solid #000',
     boxShadow: 24,
@@ -40,17 +47,17 @@ const Resume = () => {
                     <div className="row">
                         <div className="col-lg-10 d-flex">
                             <div className="col-3">
-                                <h3 className="resume-title">Summary:</h3>
+                                <h3 className="resume-title text-end">Summary:</h3>
                             </div>
-                            <div className="col-9 pt-2">
+                            <div className="col-9 pt-2 sum">
                                 <h6>Matt is a Frontend Developer with over 5 years of experience in the field. His technical skills include HTML5, CSS3, SASS(SCSS), Bootstrap-5, JavaScript ES6, React.js, Redux, Material UI, Linux, SQL, Git & GitHub, Python, APIs, RESTful APIs, Firebase, Django, Agile, and Jira. Matt has worked as a Frontend Developer at Tower Cambridge and has developed web pages leading to a 30% increase in user engagement and retention. He also worked as an ESL & ICT Teacher in Vietnam and taught approximately 2400 hours over 3 years.</h6>
                             </div>
                         </div>
                         <div className="col-lg-10 d-flex mt-5">
                             <div className="col-3">
-                                <h3 className="resume-title">Education:</h3>
+                                <h3 className="resume-title text-end">Education:</h3>
                             </div>
-                            <div className="col-9">
+                            <div className="col-9 edu">
                                 <div className="resume-item">
                                     <h5>Master's of Education</h5>
                                     <h6>University of Essex, UK - <em>08-2020-09-2023</em></h6>
@@ -67,6 +74,7 @@ const Resume = () => {
                                     >
                                         <Box sx={style}>
                                             <Typography id="clarusway" variant="h6" component="h2">
+                                                <CloseIcon className='closeButton' onClick={handleClose3} />
                                                 <h3>Full-Stack Bootcamp</h3>
                                                 <h6>Clarusway LLC, (Remote-USA) - <em>January 2020 - September 2021</em></h6>
                                             </Typography>
@@ -92,9 +100,9 @@ const Resume = () => {
 
                         <div className="col-lg-10 d-flex mt-5">
                             <div className="col-3">
-                                <h3 className="resume-title">Experience:</h3>
+                                <h3 className="resume-title text-end">Experience:</h3>
                             </div>
-                            <div className="col-9">
+                            <div className="col-9 edu">
                                 <div className="resume-item">
                                     <h5 className='shdw' onClick={handleOpen2}>Front End Developer</h5>
                                     <h6>Tower Cambridge, (Remote-Vietnam) - <em>August 2017 - Present</em></h6><p><Link href='https://anhngucambridge.com' target='_blank' >Go to employer's website</Link></p>
@@ -106,6 +114,7 @@ const Resume = () => {
                                     >
                                         <Box sx={style}>
                                             <Typography id="tower" variant="h6" component="h2">
+                                                <CloseIcon className='closeButton' onClick={handleClose2} />
                                                 <h3>Front End Developer</h3>
                                                 <h6>Tower Cambridge, (Remote-Vietnam) - <em>August 2017 - Present</em></h6>
                                             </Typography>
@@ -136,6 +145,7 @@ const Resume = () => {
                                     >
                                         <Box sx={style}>
                                             <Typography id="vinschool" variant="" component="">
+                                                <CloseIcon className='closeButton' onClick={handleClose} />
                                                 <h3>ESL & ICT Teacher</h3>
                                                 <h6>Vinschool, (Hanoi-Vietnam) - <em>August 2019 - January 2023</em></h6>
                                             </Typography>

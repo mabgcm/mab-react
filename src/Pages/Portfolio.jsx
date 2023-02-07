@@ -10,6 +10,7 @@ import yba from '../assets/img/yba.png';
 import lms from '../assets/img/lms.png';
 import cam from '../assets/img/cam.png';
 import { Link } from 'react-router-dom';
+import { Paper } from '@mui/material';
 
 
 
@@ -85,12 +86,13 @@ function Item(props) {
     const handleClose = () => setOpen(false);
 
     return (
-        <div>
+        <Paper elevation={3} className='paper'>
             <div>
                 <h2>{props.item.name}</h2>
                 <h6 className='mb-4'><strong>Project URL: </strong><Link to='{props.item.link}'>{props.item.link}</Link></h6>
-                <img src={[props.item.img]} className='portfolio-img' alt="" />
-
+                <div className="port-img">
+                    <img src={[props.item.img]} className='portfolio-img' alt="" />
+                </div>
             </div>
             <div className='mt-4 text-center'>
                 <button className='btn btn-primary' onClick={handleOpen}>See Details</button>
@@ -111,7 +113,7 @@ function Item(props) {
                     </Box>
                 </Modal>
             </div>
-        </div>
+        </Paper>
     )
 }
 
