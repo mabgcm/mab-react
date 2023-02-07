@@ -193,6 +193,21 @@ section {
   margin: auto;
 }
 
+@media only screen and (min-width: 1024px) {
+  .portfolio {
+    width: 90%;
+  }
+
+  .paper {
+    width: 99%;
+  }
+
+  .portfolio-img {
+    width: 60vw;
+    height: 35vh;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .portfolio {
     width: 90%;
@@ -207,7 +222,7 @@ section {
   }
 }
 
-@media only screen and (min-width: 360px) {
+@media only screen and (max-width: 360px) {
   .portfolio {
     width: 99%;
   }

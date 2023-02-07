@@ -71,6 +71,7 @@ const Resume = () => {
                                         onClose={handleClose3}
                                         aria-labelledby="clarusway"
                                         aria-describedby="cls"
+                                        className='modal3'
                                     >
                                         <Box sx={style}>
                                             <Typography id="clarusway" variant="h6" component="h2">

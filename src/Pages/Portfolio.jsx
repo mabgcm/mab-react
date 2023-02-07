@@ -11,6 +11,8 @@ import lms from '../assets/img/lms.png';
 import cam from '../assets/img/cam.png';
 import { Link } from 'react-router-dom';
 import { Paper } from '@mui/material';
+import CloseIcon from '@mui/icons-material/Close';
+
 
 
 
@@ -19,7 +21,13 @@ const style = {
     top: '50%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
-    width: 700,
+    width: {
+        xs: 400,
+        sm: 600,
+        md: 600,
+        lg: 600,
+        xl: 600,
+    },
     bgcolor: 'background.paper',
     border: '2px solid #000',
     boxShadow: 24,
@@ -103,6 +111,7 @@ function Item(props) {
                     aria-describedby="modal-modal-description"
                 >
                     <Box sx={style}>
+                        <CloseIcon className='closeButton' onClick={handleClose} />
                         <Typography id="modal-modal-title" variant="h6" component="h2">
                             <h2>{props.item.name}</h2>
                         </Typography>
