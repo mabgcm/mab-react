@@ -11,7 +11,7 @@ import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import { Link } from 'react-router-dom';
 
-const pages = ['Resume', 'Portfolio', 'Blog', 'Contact'];
+const pages = ['Resume', 'Portfolio', 'Contact'];
 // const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function Navbar() {
