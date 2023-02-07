@@ -170,7 +170,7 @@ section {
   width: 750px;
   margin: 150px auto;
   padding: 20px;
-  height: 59vh;
+  height: 60vh;
   /* border: #050d18 solid 1px; */
 }
 
@@ -210,7 +210,7 @@ section {
 
 @media only screen and (max-width: 600px) {
   .portfolio {
-    width: 90%;
+    width: 95%;
   }
 
   .paper {
@@ -218,7 +218,7 @@ section {
   }
 
   .portfolio-img {
-    width: 450px;
+    width: 350px;
   }
 }
 
