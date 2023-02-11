@@ -113,7 +113,7 @@ function Item(props) {
                     <Box sx={style}>
                         <CloseIcon className='closeButton' onClick={handleClose} />
                         <Typography id="modal-modal-title" variant="h6" component="h2">
-                            <h2>{props.item.name}</h2>
+                            <h2 onClick={handleClose}>{props.item.name}</h2>
                         </Typography>
                         <Typography id="modal-modal-description" sx={{ mt: 2 }}>
                             <h6><strong>Key Skills Used: </strong>{props.item.skills}</h6>
