@@ -218,11 +218,11 @@ section {
   }
 
   .portfolio-img {
-    width: 350px;
+    width: min-content;
   }
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 414px) {
   .portfolio {
     width: 99%;
   }
