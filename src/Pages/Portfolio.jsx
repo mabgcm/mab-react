@@ -102,7 +102,7 @@ function Item(props) {
         <Paper elevation={3} className='paper'>
             <div>
                 <h2>{props.item.name}</h2>
-                <h6 className='mb-4'><strong>Project URL: </strong><Link to='{props.item.link}'>{props.item.link}</Link></h6>
+                <h6 className='mb-4'><strong>Project URL: </strong><Link to={props.item.link} target='_blank'>{props.item.link}</Link></h6>
                 <div className="port-img">
                     <img src={[props.item.img]} className='portfolio-img' alt="" />
                 </div>
