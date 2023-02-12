@@ -21,6 +21,7 @@ const style = {
     border: '2px solid #000',
     boxShadow: 24,
     p: 4,
+    overflow: 'scroll'
 };
 
 const Resume = () => {
@@ -60,11 +61,11 @@ const Resume = () => {
                             <div className="col-9 edu">
                                 <div className="resume-item">
                                     <h5>Master's of Education</h5>
-                                    <h6>University of Essex, UK - <em>08-2020-09-2023</em></h6>
+                                    <h6>University of Essex, UK - <em>August 2020 - September 2023</em></h6>
                                 </div>
                                 <div className="resume-item">
                                     <h5 className='shdw' onClick={handleOpen3}>Full-Stack Bootcamp</h5>
-                                    <h6>Clarusway LLC, (Remote-USA) - <em>01-2020-09-2021</em></h6>
+                                    <h6>Clarusway LLC, (Remote-USA) - <em>January 2020 - September 2021</em></h6>
                                     <p><Link href='https://www.clarusway.com' target='_blank' >Go to bootcamp's website</Link></p>
                                     <Modal
                                         open={open3}
@@ -93,8 +94,8 @@ const Resume = () => {
                                     </Modal>
                                 </div>
                                 <div className="resume-item">
-                                    <h5>Master's of Education</h5>
-                                    <h6>University of Essex, UK - <em>August 2020 - September 2023</em></h6>
+                                    <h5>Bachelor of Applied Science, Linguistics,</h5>
+                                    <h6>Mersin University, Turkey - <em>September 2005 - June 2009</em></h6>
                                 </div>
                             </div>
                         </div>
