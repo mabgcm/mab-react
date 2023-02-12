@@ -70,6 +70,9 @@ const Portfolio = () => {
 
     return (
         <div>
+            <div className='section-title'>
+                <h2 className='m-5'>Portfolio</h2>
+            </div>
             <section className='portfolio'>
                 <Carousel
                     NextIcon={<ArrowForwardIosIcon />}
@@ -103,7 +106,7 @@ function Item(props) {
                 </div>
             </div>
             <div className='mt-4 text-center'>
-                <button className='btn btn-primary' onClick={handleOpen}>See Details</button>
+                <button className='btn btn-success' onClick={handleOpen}>See Details</button>
                 <Modal
                     open={open}
                     onClose={handleClose}

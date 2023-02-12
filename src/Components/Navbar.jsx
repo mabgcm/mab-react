@@ -10,13 +10,17 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import { Link } from 'react-router-dom';
+// import { Avatar, Tooltip } from '@mui/material';
+// import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 const pages = ['Resume', 'Portfolio', 'Contact'];
-// const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function Navbar() {
     const [anchorElNav, setAnchorElNav] = React.useState(null);
-    // const [anchorElUser, setAnchorElUser] = React.useState(null);
+    const [anchorElUser, setAnchorElUser] = React.useState(null);
 
     const handleOpenNavMenu = (event) => {
         setAnchorElNav(event.currentTarget);
@@ -29,9 +33,9 @@ function Navbar() {
         setAnchorElNav(null);
     };
 
-    // const handleCloseUserMenu = () => {
-    //     setAnchorElUser(null);
-    // };
+    const handleCloseUserMenu = () => {
+        setAnchorElUser(null);
+    };
 
     const appBarStyle = {
         textDecoration: 'none',
@@ -54,7 +58,7 @@ function Navbar() {
                             mr: 2,
                             display: { xs: 'none', md: 'flex' },
                             fontFamily: 'Rubik',
-                            fontWeight: 400,
+                            fontWeight: 900,
                             letterSpacing: '.3rem',
                             color: 'inherit',
                             textDecoration: 'none',
@@ -116,7 +120,7 @@ function Navbar() {
                             flexGrow: 1,
                             fontFamily: 'monospace',
                             fontWeight: 900,
-                            letterSpacing: '.3rem',
+                            letterSpacing: '.1rem',
                             color: 'inherit',
                             textDecoration: 'none',
                             '&:hover': {
@@ -126,24 +130,26 @@ function Navbar() {
                     >
                         Matt Ali Bugucam
                     </Typography>
-                    <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+                    <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, paddingLeft: '20%' }}>
                         {pages.map((page) => (
                             <Button
                                 key={page}
                                 onClick={handleCloseNavMenu}
-                                sx={{ my: 2, color: 'white', display: 'block' }}
+                                sx={{ my: 2, color: 'white', display: 'flex', marginLeft: '10px' }}
                             >
                                 <Link style={{ textDecoration: 'none', color: 'white', fontWeight: '700' }} to={`/${page}`}>{page}</Link>
                             </Button>
                         ))}
                     </Box>
 
-                    {/* <Box sx={{ flexGrow: 0 }}>
-                        <Tooltip title="Open settings">
-                            <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
+                    <Box sx={{ flexGrow: 0 }}>
+                        <Link style={{ textDecoration: 'none', color: 'white', fontWeight: '700' }} to='https://www.linkedin.com/in/mattalibugucam/' target='_blank'><LinkedInIcon style={{ marginRight: '5px' }} /></Link>
+                        <Link style={{ textDecoration: 'none', color: 'white', fontWeight: '700' }} to='https://github.com/mabgcm' target='_blank'><GitHubIcon /></Link>
+                        {/* <Tooltip title="Click to login">
+                            <AccountCircleIcon onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                                 <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
-                            </IconButton>
-                        </Tooltip>
+                            </AccountCircleIcon>
+                        </Tooltip> */}
                         <Menu
                             sx={{ mt: '45px' }}
                             id="menu-appbar"
@@ -166,7 +172,7 @@ function Navbar() {
                                 </MenuItem>
                             ))}
                         </Menu>
-                    </Box> */}
+                    </Box>
                 </Toolbar>
             </Container>
         </AppBar>

@@ -5,7 +5,9 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import emailjs from '@emailjs/browser';
 import { Paper } from '@mui/material';
-
+import PlaceIcon from '@mui/icons-material/Place';
+import MailOutlineIcon from '@mui/icons-material/MailOutline';
+import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 
 const Contact = () => {
 
@@ -29,47 +31,81 @@ const Contact = () => {
     };
 
     return (
-        <section className='m-5 pt-5 text-center'>
-            <Paper className='paper'>
-                <h1 className=''>Contact Form</h1>
-                <Box
-                    component="form"
-                    sx={{
-                        '& .MuiTextField-root': { m: 1, width: '70vw' },
-                    }}
-                    noValidate
-                    autoComplete="off"
-                    ref={form} onSubmit={sendEmail}
-                >
-                    <div>
-                        <TextField
-                            required
-                            id="user_name"
-                            name="from_name"
-                            label="Your Name"
-                            placeholder="Enter your name here.."
-                        />
-                        <TextField
-                            required
-                            id="email"
-                            name="user_email"
-                            label="Your E-mail"
-                            type="email"
-                            placeholder="Enter your email here.."
-                        />
-                        <TextField
-                            id="message"
-                            name="message"
-                            label="Your Message"
-                            multiline
-                            rows={4}
-                            placeholder="Default Value"
-                        />
+        <section className='mx-2 my-5 pt-5 text-center row'>
+            <h1 className='mb-5'>Contact Matt</h1>
+            <div className="col-sm-12 col-md-6 mb-3">
+                <Paper elevation={3} className='paper-info'>
+                    <div class="text-start row pb-5">
+                        <div className="col-2">
+                            <PlaceIcon style={{ fontSize: '55px' }} className='icon' />
+                        </div>
+                        <div className="col-10">
+                            <h5>Location:</h5>
+                            <p>Saint John, New Brunswick, Canada</p>
+                        </div>
                     </div>
-                    <button id='signin' onClick={notify} variant="success" type="submit" className='btn btn-success w-25'>Send</button>
-                    <ToastContainer />
-                </Box>
-            </Paper>
+                    <div class="text-start row pb-5">
+                        <div className="col-2">
+                            <MailOutlineIcon style={{ fontSize: '55px' }} className='icon' />
+                        </div>
+                        <div className="col-10">
+                            <h5>E-Mail:</h5>
+                            <p>admin@mabgcm.com</p>
+                        </div>
+                    </div>
+                    <div class="text-start row pb-5">
+                        <div className="col-2">
+                            <LocalPhoneIcon style={{ fontSize: '55px' }} className='icon' />
+                        </div>
+                        <div className="col-10">
+                            <h5>Phone:</h5>
+                            <p>+1 (506) 349-3512</p>
+                        </div>
+                    </div>
+                </Paper>
+            </div>
+            <div className="col-sm-12 col-md-6">
+                <Paper elevation={3} className='paper-contact pb-3 pt-3'>
+                    <h3 className=''>Leave a Message</h3>
+                    <Box
+                        component="form"
+                        sx={{
+                            '& .MuiTextField-root': { m: 1, width: '90%' },
+                        }}
+                        noValidate
+                        autoComplete="off"
+                        ref={form} onSubmit={sendEmail}
+                    >
+                        <div>
+                            <TextField
+                                required
+                                id="user_name"
+                                name="from_name"
+                                label="Your Name"
+                                placeholder="Enter your name here.."
+                            />
+                            <TextField
+                                required
+                                id="email"
+                                name="user_email"
+                                label="Your E-mail"
+                                type="email"
+                                placeholder="Enter your email here.."
+                            />
+                            <TextField
+                                id="message"
+                                name="message"
+                                label="Your Message"
+                                multiline
+                                rows={4}
+                                placeholder="Default Value"
+                            />
+                        </div>
+                        <button id='signin' onClick={notify} variant="success" type="submit" className='btn btn-success w-25'>Send</button>
+                        <ToastContainer />
+                    </Box>
+                </Paper>
+            </div>
         </section>
     )
 }

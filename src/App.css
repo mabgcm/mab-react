@@ -57,7 +57,7 @@ section {
 }
 
 .section-title {
-  padding-top: 30px;
+  padding-top: 60px;
   padding-bottom: 30px;
 }
 
@@ -74,7 +74,7 @@ section {
   content: "";
   position: absolute;
   display: block;
-  width: 50px;
+  width: 120px;
   height: 3px;
   background: #F7DD72;
   bottom: 0;
@@ -168,7 +168,7 @@ section {
 
 .portfolio {
   width: 750px;
-  margin: 150px auto;
+  margin: 15px auto;
   padding: 20px;
   height: 65vh;
   /* border: #050d18 solid 1px; */
@@ -193,7 +193,7 @@ section {
   margin: auto;
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (max-width: 1024px) {
   .portfolio {
     width: 90%;
   }
@@ -218,7 +218,7 @@ section {
   }
 
   .portfolio-img {
-    width: min-content;
+    width: 400px;
   }
 }
 
@@ -235,4 +235,18 @@ section {
     width: 300px;
     height: 150px;
   }
+}
+
+/* .paper-contact {
+  width: 50vw;
+} */
+
+.paper-info {
+  padding-top: 37px;
+  /* padding-bottom: 10px; */
+}
+
+.icon {
+  color: darkgreen;
+  padding-left: 10px;
 }
