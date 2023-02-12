@@ -17,6 +17,7 @@ const style = {
         lg: 600,
         xl: 600,
     },
+    height: 500,
     bgcolor: 'background.paper',
     border: '2px solid #000',
     boxShadow: 24,
