@@ -9,16 +9,49 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
-import { Link } from 'react-router-dom';
 // import { Avatar, Tooltip } from '@mui/material';
 // import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import LoginIcon from '@mui/icons-material/Login';
+import LogoutIcon from '@mui/icons-material/Logout';
+import { Link, useNavigate } from 'react-router-dom';
+import { UserAuth } from '../context/AuthContext';
+import { Avatar } from '@mui/material';
+import { useEffect } from 'react';
 
 const pages = ['Resume', 'Portfolio', 'Contact'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
+
 function Navbar() {
+
+    const { googleSignIn, user, logOut } = UserAuth();
+    const navigate = useNavigate();
+
+    const handleGoogleSignIn = async () => {
+        try {
+            await googleSignIn();
+        } catch (error) {
+            console.log(error);
+        }
+    };
+
+    useEffect(() => {
+        if (user != null) {
+            navigate('/account')
+        }
+    }, [user, navigate]);
+
+    const handleSignOut = async () => {
+        try {
+            await logOut();
+            navigate('/');
+        } catch (error) {
+            console.log(error);
+        }
+    };
+
     const [anchorElNav, setAnchorElNav] = React.useState(null);
     const [anchorElUser, setAnchorElUser] = React.useState(null);
 
@@ -41,7 +74,6 @@ function Navbar() {
         textDecoration: 'none',
         backgroundColor: 'black',
     }
-
 
 
     return (
@@ -106,6 +138,9 @@ function Navbar() {
                                     </Typography>
                                 </MenuItem>
                             ))}
+                            {user && <MenuItem>
+                                <Link style={{ textDecoration: 'none', color: 'black' }} to='/account'>Account</Link>
+                            </MenuItem>}
                         </Menu>
                     </Box>
                     {/* <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} /> */}
@@ -120,7 +155,11 @@ function Navbar() {
                             flexGrow: 1,
                             fontFamily: 'monospace',
                             fontWeight: 900,
-                            letterSpacing: '.1rem',
+                            fontSize: {
+                                sm: 25,
+                                xs: 15,
+                            },
+                            letterSpacing: '2px',
                             color: 'inherit',
                             textDecoration: 'none',
                             '&:hover': {
@@ -130,7 +169,7 @@ function Navbar() {
                     >
                         Matt Ali Bugucam
                     </Typography>
-                    <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, paddingLeft: '20%' }}>
+                    <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, paddingLeft: '10%' }}>
                         {pages.map((page) => (
                             <Button
                                 key={page}
@@ -140,11 +179,26 @@ function Navbar() {
                                 <Link style={{ textDecoration: 'none', color: 'white', fontWeight: '700' }} to={`/${page}`}>{page}</Link>
                             </Button>
                         ))}
+                        {user && <Button>
+                            <Link style={{ textDecoration: 'none', color: 'white', fontWeight: '700' }} to='/account'>Account</Link>
+                        </Button>}
                     </Box>
 
                     <Box sx={{ flexGrow: 0 }}>
-                        <Link style={{ textDecoration: 'none', color: 'white', fontWeight: '700' }} to='https://www.linkedin.com/in/mattalibugucam/' target='_blank'><LinkedInIcon style={{ marginRight: '5px' }} /></Link>
-                        <Link style={{ textDecoration: 'none', color: 'white', fontWeight: '700' }} to='https://github.com/mabgcm' target='_blank'><GitHubIcon /></Link>
+
+
+                        {user?.displayName ? <Container style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                            <Avatar
+                                alt={user.displayName}
+                                src={user.photoURL}
+                                sx={{ width: 35, height: 35, marginRight: 1 }} />
+                            <Link to='/' onClick={handleSignOut}><LogoutIcon style={{ color: 'orange' }} /></Link>
+                        </Container> : <Container>
+                            <Link style={{ textDecoration: 'none', color: 'white', fontWeight: '700' }} to='https://www.linkedin.com/in/mattalibugucam/' target='_blank'><LinkedInIcon style={{ marginRight: '5px' }} /></Link>
+                            <Link style={{ textDecoration: 'none', color: 'white', fontWeight: '700' }} to='https://github.com/mabgcm' target='_blank'><GitHubIcon /></Link>
+                            {/* <LoginIcon onClick={handleGoogleSignIn} style={{ color: 'lightgreen', marginLeft: '10px', cursor: 'pointer' }} /> */}
+                        </Container>}
+
                         {/* <Tooltip title="Click to login">
                             <AccountCircleIcon onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                                 <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
