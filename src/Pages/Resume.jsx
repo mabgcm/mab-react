@@ -66,7 +66,7 @@ const Resume = () => {
                                 </div>
                                 <div className="resume-item">
                                     <h5 className='shdw' onClick={handleOpen3}>Full-Stack Bootcamp</h5>
-                                    <h6>Clarusway LLC, (Remote-USA) - <em>January 2020 - September 2021</em></h6>
+                                    <h6>Clarusway LLC, (Remote-USA) - <em>January 2022 - October 2022</em></h6>
                                     <p><Link href='https://www.clarusway.com' target='_blank' >Go to bootcamp's website</Link></p>
                                     <Modal
                                         open={open3}

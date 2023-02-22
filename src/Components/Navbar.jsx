@@ -41,7 +41,7 @@ function Navbar() {
         if (user != null) {
             navigate('/account')
         }
-    }, [user, navigate]);
+    }, [user]);
 
     const handleSignOut = async () => {
         try {
@@ -139,7 +139,7 @@ function Navbar() {
                                 </MenuItem>
                             ))}
                             {user && <MenuItem>
-                                <Link style={{ textDecoration: 'none', color: 'black' }} to='/account'>Account</Link>
+                                <Link style={{ textDecoration: 'none', color: 'black' }} to='/account'>Blog</Link>
                             </MenuItem>}
                         </Menu>
                     </Box>
@@ -180,7 +180,7 @@ function Navbar() {
                             </Button>
                         ))}
                         {user && <Button>
-                            <Link style={{ textDecoration: 'none', color: 'white', fontWeight: '700' }} to='/account'>Account</Link>
+                            <Link style={{ textDecoration: 'none', color: 'white', fontWeight: '700' }} to='/account'>Blog</Link>
                         </Button>}
                     </Box>
 
@@ -196,7 +196,7 @@ function Navbar() {
                         </Container> : <Container>
                             <Link style={{ textDecoration: 'none', color: 'white', fontWeight: '700' }} to='https://www.linkedin.com/in/mattalibugucam/' target='_blank'><LinkedInIcon style={{ marginRight: '5px' }} /></Link>
                             <Link style={{ textDecoration: 'none', color: 'white', fontWeight: '700' }} to='https://github.com/mabgcm' target='_blank'><GitHubIcon /></Link>
-                            {/* <LoginIcon onClick={handleGoogleSignIn} style={{ color: 'lightgreen', marginLeft: '10px', cursor: 'pointer' }} /> */}
+
                         </Container>}
 
                         {/* <Tooltip title="Click to login">

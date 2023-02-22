@@ -250,3 +250,12 @@ section {
   color: darkgreen;
   padding-left: 10px;
 }
+
+.editor {
+  padding-left: 5%;
+}
+
+.likestar {
+  font-size: 10px;
+  color: black;
+}
