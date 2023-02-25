@@ -108,7 +108,7 @@ const Resume = () => {
                             <div className="col-9 edu">
                                 <div className="resume-item">
                                     <h5 className='shdw' onClick={handleOpen2}>Front End Developer</h5>
-                                    <h6>Tower Cambridge, (Remote-Vietnam) - <em>August 2017 - Present</em></h6><p><Link href='https://anhngucambridge.com' target='_blank' >Go to employer's website</Link></p>
+                                    <h6>Tower Cambridge, (Remote-Vietnam) - <em>August 2017 - Present</em></h6><p><Link href='https://towercambridge.com' target='_blank' >Go to employer's website</Link></p>
                                     <Modal
                                         open={open2}
                                         onClose={handleClose2}
