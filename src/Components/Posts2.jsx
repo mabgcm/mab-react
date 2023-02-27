@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from 'react';
-// import { Link } from 'react-router-dom';
-// import { UserAuth } from '../context/AuthContext';
 import CircleIcon from '@mui/icons-material/Circle';
 import { collection, onSnapshot, orderBy, query } from "firebase/firestore";
 import { db } from "../firebase";
@@ -10,7 +8,6 @@ import { Link } from 'react-router-dom';
 const Posts2 = () => {
 
     const [blogs, setBlogs] = useState([]);
-    // const { user } = UserAuth();
 
     useEffect(() => {
         const articleRef = collection(db, "blogpost");
@@ -21,13 +18,12 @@ const Posts2 = () => {
                 ...doc.data(),
             }));
             setBlogs(blogs);
-            console.log(blogs);
         });
     }, []);
 
     return (
         <div className="col-lg-4 border-start custom-border">
-            {blogs.slice(4, 7).map(({ id, title, category, parag1, caption, image1, likes, timestamp }) => (
+            {blogs.slice(4, 7).map(({ id, title, category, image1, timestamp }) => (
                 <div className="post-entry-1" key={id}>
                     <Link to={`/blogpost/${id}`}><img src={image1} alt="" className="img-fluid" /></Link>
                     <div className="post-meta"><span className="date">{category}</span> <span className="mx-1"><CircleIcon fontSize='xsmall' /></span> <span>{new Date(timestamp?.toDate()).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: '2-digit' }).toUpperCase()}</span></div>

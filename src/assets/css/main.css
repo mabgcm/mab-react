@@ -998,3 +998,10 @@ section {
   border-radius: 50%;
   margin-right: 5px;
 }
+
+.number {
+  z-index: -1;
+  font-size: 5rem;
+  font-weight: 900;
+  color: rgba(var(--color-black-rgb), 0.2);
+}

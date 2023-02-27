@@ -21,7 +21,7 @@ const Posts = () => {
                 ...doc.data(),
             }));
             setBlogs(blogs);
-            console.log(blogs);
+            // console.log(blogs);
         });
     }, []);
 

@@ -88,7 +88,7 @@ const Blogpost = () => {
 
 
                                 <div className="comments">
-                                    <Comment id={article.id} />
+                                    <Comment key={article.id} id={article.id} />
                                 </div>
                             </div>
                             <div className="col-md-3 col-lg-3">
@@ -111,15 +111,6 @@ const Blogpost = () => {
                                         </div>
                                     ))}
                                 </div>
-
-                                {/* <div className="aside-block">
-                                    <h3 className="aside-title">Categories</h3>
-                                    <ul className="aside-links list-unstyled">
-                                        {categories.map((category, index) => (
-                                            <li><Link to="/account">{category}</Link></li>
-                                        ))}
-                                    </ul>
-                                </div> */}
                             </div>
                         </div>
                     </div>

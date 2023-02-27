@@ -8,8 +8,31 @@ import { Box, SpeedDial, SpeedDialIcon } from '@mui/material';
 import RecentPost from '../Components/RecentPost';
 import Posts from '../Components/Posts';
 import Posts2 from '../Components/Posts2';
+import Filter from '../Components/Filter';
 
 const Account = () => {
+
+    const categoryOption = [
+        "Business",
+        "Career",
+        "Cinema",
+        "Cooking",
+        "Design",
+        "Ecology",
+        "EdTech",
+        "Education",
+        "Entertainment",
+        "Health",
+        "History",
+        "Music",
+        "Personal Development",
+        "Politics",
+        "Programming",
+        "Shopping",
+        "Sprituality",
+        "Technology",
+        "Travel",
+    ];
 
     const [blogposts, setBlogposts] = useState([]);
 
@@ -71,6 +94,9 @@ const Account = () => {
 
                                     <div className="col-lg-4">
                                         <div className="trending">
+                                            <div>
+                                                <Filter categoryOption={categoryOption} />
+                                            </div>
                                             <h3>Most Popular</h3>
                                             <ul className="trending-post">
                                                 {blogposts.slice(0, 5).map((post, index) => (
@@ -91,7 +117,7 @@ const Account = () => {
                     </div>
                 </section>
             </main>
-        </div>
+        </div >
     )
 }
 

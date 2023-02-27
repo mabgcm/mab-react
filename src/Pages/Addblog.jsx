@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useState } from 'react';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import { ToastContainer, toast } from 'react-toastify';
@@ -11,7 +11,6 @@ import {
     serverTimestamp,
 } from "firebase/firestore";
 import { useNavigate } from 'react-router';
-import { Editor } from '@tinymce/tinymce-react';
 
 const initialState = {
     title: "",
@@ -49,12 +48,12 @@ const Addblog = () => {
 
     const user = auth.currentUser
 
-    const editorRef = useRef(null);
-    const log = () => {
-        if (editorRef.current) {
-            console.log(editorRef.current.getContent());
-        }
-    };
+    // const editorRef = useRef(null);
+    // const log = () => {
+    //     if (editorRef.current) {
+    //         console.log(editorRef.current.getContent());
+    //     }
+    // };
 
     const [numParagraphs, setNumParagraphs] = useState(1);
     const [numPhotos, setNumPhotos] = useState(1);
