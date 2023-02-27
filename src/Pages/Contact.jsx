@@ -4,7 +4,7 @@ import TextField from '@mui/material/TextField';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import emailjs from '@emailjs/browser';
-import { Paper } from '@mui/material';
+import { Container, Paper } from '@mui/material';
 import PlaceIcon from '@mui/icons-material/Place';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
@@ -31,38 +31,38 @@ const Contact = () => {
     };
 
     return (
-        <section className='mx-2 my-5 pt-5 text-center row'>
-            <h1 className='mb-5'>Contact Matt</h1>
+        <section className='mx-5 my-5 pt-5 text-center row'>
+            <h1 className='mb-5 text-success'>Contact Matt</h1>
             <div className="col-sm-12 col-md-6 mb-3">
-                <Paper elevation={3} className='paper-info'>
-                    <div class="text-start row pb-5">
+                <Container elevation={3} className='paper-info'>
+                    <div class="text-start row ps-4 contact-pb">
                         <div className="col-2">
-                            <PlaceIcon style={{ fontSize: '55px' }} className='icon' />
+                            <PlaceIcon style={{ fontSize: '75px', color: 'white' }} className='icon' />
                         </div>
-                        <div className="col-10">
-                            <h5>Location:</h5>
+                        <div className="col-10 ps-4">
+                            <h4 className='mt-3'>Location:</h4>
                             <p>Saint John, New Brunswick, Canada</p>
                         </div>
                     </div>
-                    <div class="text-start row pb-5">
+                    <div class="text-start row ps-4 contact-pb">
                         <div className="col-2">
-                            <MailOutlineIcon style={{ fontSize: '55px' }} className='icon' />
+                            <MailOutlineIcon style={{ fontSize: '75px', color: 'white' }} className='icon' />
                         </div>
-                        <div className="col-10">
-                            <h5>E-Mail:</h5>
+                        <div className="col-10 ps-4">
+                            <h4 className='mt-2'>E-Mail:</h4>
                             <p>admin@mabgcm.com</p>
                         </div>
                     </div>
-                    <div class="text-start row pb-5">
+                    <div class="text-start row ps-4 contact-pb">
                         <div className="col-2">
-                            <LocalPhoneIcon style={{ fontSize: '55px' }} className='icon' />
+                            <LocalPhoneIcon style={{ fontSize: '75px', color: 'white' }} className='icon' />
                         </div>
-                        <div className="col-10">
-                            <h5>Phone:</h5>
+                        <div className="col-10 ps-4">
+                            <h4 className='mt-1'>Phone:</h4>
                             <p>+1 (506) 349-3512</p>
                         </div>
                     </div>
-                </Paper>
+                </Container>
             </div>
             <div className="col-sm-12 col-md-6">
                 <Paper elevation={3} className='paper-contact pb-3 pt-3'>

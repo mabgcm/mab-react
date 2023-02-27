@@ -42,7 +42,7 @@ const Resume = () => {
         <>
             <section id="resume" className="resume">
                 <div className="container">
-                    <div className='section-title'>
+                    <div className='section-title mx-5 ps-5'>
                         <h2>Resume</h2>
                     </div>
 
@@ -52,9 +52,51 @@ const Resume = () => {
                                 <h3 className="resume-title text-end">Summary:</h3>
                             </div>
                             <div className="col-9 pt-2 sum">
-                                <h6>Matt is a Frontend Developer with over 5 years of experience in the field. His technical skills include HTML5, CSS3, SASS(SCSS), Bootstrap-5, JavaScript ES6, React.js, Redux, Material UI, Linux, SQL, Git & GitHub, Python, APIs, RESTful APIs, Firebase, Django, Agile, and Jira. Matt has worked as a Frontend Developer at Tower Cambridge and has developed web pages leading to a 30% increase in user engagement and retention. He also worked as an ESL & ICT Teacher in Vietnam and taught approximately 2400 hours over 3 years.</h6>
+                                <h5>Matt is a Frontend Developer with over 5 years of experience in the field. Matt has worked as a Frontend Developer at Tower Cambridge and has developed web pages leading to a 30% increase in user engagement and retention. He also worked as an ESL & ICT Teacher in Vietnam and taught approximately 2400 hours over 3 years.</h5>
                             </div>
                         </div>
+
+                        <div className="col-lg-10 d-flex">
+                            <div className="col-3">
+                                <h3 className="resume-title text-end">Technical Skills:</h3>
+                            </div>
+                            <div className="col-9 pt-2 sum hskill-item">
+                                <h5>HTML</h5>
+                                <h5>HTML5</h5>
+                                <h5>CSS3</h5>
+                                <h5>SASS (SCSS)</h5>
+                                <h5>Bootstrap-5</h5>
+                                <h5>JavaScript ES6</h5>
+                                <h5>TypeScript</h5>
+                                <h5>Redux</h5>
+                                <h5>Angular</h5>
+                                <h5>Material UI</h5>
+                                <h5>Linux</h5>
+                                <h5>SQL</h5>
+                                <h5>Git & GitHub</h5>
+                                <h5>Python</h5>
+                                <h5>JSON</h5>
+                                <h5>XML</h5>
+                                <h5>APIs</h5>
+                                <h5>RESTful APIs</h5>
+                                <h5>Firebase</h5>
+                                <h5>Django</h5>
+                                <h5>Agile</h5>
+                                <h5>Jira</h5>
+                                <h5>VS Code</h5>
+                            </div>
+                        </div>
+
+                        <div className="col-lg-10 d-flex">
+                            <div className="col-3">
+                                <h3 className="resume-title text-end">Soft Skills:</h3>
+                            </div>
+                            <div className="col-9 pt-2 sum skill-item">
+                                <h5>Analytical Thinking</h5><h5>Self-Motivated</h5><h5>Strong Communication</h5><h5>Project Management</h5><h5>Adaptability</h5><h5>Continuous Learning</h5><h5>Collaboration & Teamwork</h5><h5>Coaching Mindset</h5><h5>Resilience</h5>
+                            </div>
+                        </div>
+
+
                         <div className="col-lg-10 d-flex mt-5">
                             <div className="col-3">
                                 <h3 className="resume-title text-end">Education:</h3>
@@ -170,6 +212,30 @@ const Resume = () => {
                                         </Box>
                                     </Modal>
                                 </div>
+                            </div>
+                        </div>
+                        <div className="col-lg-10 d-flex">
+                            <div className="col-3">
+                                <h3 className="resume-title text-end">Languages:</h3>
+                            </div>
+                            <div className="col-9 pt-2 sum cert-item">
+                                <h5 className='bg-secondary text-light'>Turkish (Native)</h5>
+                                <h5 className='bg-secondary text-light'>English (Proficient)</h5>
+                                <h5 className='bg-secondary text-light'>German (Beginner)</h5>
+                            </div>
+                        </div>
+
+                        <div className="col-lg-10 d-flex">
+                            <div className="col-3">
+                                <h3 className="resume-title text-end">Certificates:</h3>
+                            </div>
+                            <div className="col-9 pt-2 sum cert-item">
+                                <Link sx={{ textDecoration: 'none', color: 'black', }} href='https://verified.sertifier.com/en/verify/38943971263518' target='_blank'><h5 className='shdw'>HTML & CSS</h5></Link>
+                                <Link sx={{ textDecoration: 'none', color: 'black', }} href='https://verified.sertifier.com/en/verify/97432029031016' target='_blank'><h5 className='shdw'>JavaSript</h5></Link>
+                                <Link sx={{ textDecoration: 'none', color: 'black', }} href='https://www.linkedin.com/learning/certificates/b0e1dd985e6b5a8a07d47fa26add535d340a0a9c85573287b72271e73b0258fd' target='_blank'><h5 className='shdw'>TypeScript</h5></Link>
+                                <Link sx={{ textDecoration: 'none', color: 'black', }} href='https://www.linkedin.com/learning/certificates/7067e4000f4d5975feee851c9e5df8cc86cd4da826cc6dbdb3a441099e29bc3b' target='_blank'><h5 className='shdw'>React</h5></Link>
+                                <Link sx={{ textDecoration: 'none', color: 'black', }} href='https://www.linkedin.com/learning/certificates/c79a0e57d1b40a248f6dea8f42bf58fe48b85f3082c3cbd599199fa9d5576b54' target='_blank'><h5 className='shdw'>Angular</h5></Link>
+                                <Link sx={{ textDecoration: 'none', color: 'black', }} href='https://www.linkedin.com/learning/certificates/8dddc3c336e8bbe41867023d9387b0b2540cca490bb1bc2f9ec9ef3a9d73c749' target='_blank'><h5 className='shdw'>Node.js</h5></Link>
                             </div>
                         </div>
                     </div>

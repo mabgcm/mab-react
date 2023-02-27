@@ -152,7 +152,7 @@ function Navbar() {
                         sx={{
                             mr: 2,
                             display: { xs: 'flex', md: 'none' },
-                            flexGrow: 1,
+                            flexShrink: 0,
                             fontFamily: 'monospace',
                             fontWeight: 900,
                             fontSize: {
@@ -184,8 +184,7 @@ function Navbar() {
                         </Button>}
                     </Box>
 
-                    <Box sx={{ flexGrow: 0 }}>
-
+                    <Box sx={{ flexShrink: 0 }}>
 
                         {user?.displayName ? <Container style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                             <Avatar
@@ -196,14 +195,9 @@ function Navbar() {
                         </Container> : <Container>
                             <Link style={{ textDecoration: 'none', color: 'white', fontWeight: '700' }} to='https://www.linkedin.com/in/mattalibugucam/' target='_blank'><LinkedInIcon style={{ marginRight: '5px' }} /></Link>
                             <Link style={{ textDecoration: 'none', color: 'white', fontWeight: '700' }} to='https://github.com/mabgcm' target='_blank'><GitHubIcon /></Link>
-                            {/* <LoginIcon onClick={handleGoogleSignIn} style={{ color: 'lightgreen', marginLeft: '10px', cursor: 'pointer' }} /> */}
+                            <LoginIcon onClick={handleGoogleSignIn} style={{ color: 'lightgreen', marginLeft: '10px', cursor: 'pointer' }} />
                         </Container>}
 
-                        {/* <Tooltip title="Click to login">
-                            <AccountCircleIcon onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
-                            </AccountCircleIcon>
-                        </Tooltip> */}
                         <Menu
                             sx={{ mt: '45px' }}
                             id="menu-appbar"

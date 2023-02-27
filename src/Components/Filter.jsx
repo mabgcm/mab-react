@@ -34,6 +34,8 @@ const Filter = ({ categoryOption }) => {
 
     const [filteredCategory, setFilteredCategory] = useState("");
     const [blogposts, setBlogposts] = useState([]);
+    const [categoryCounts, setCategoryCounts] = useState({});
+
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);

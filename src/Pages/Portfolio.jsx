@@ -72,7 +72,7 @@ const Portfolio = () => {
 
     return (
         <div>
-            <div className='section-title'>
+            <div className='section-title mx-5 ps-5'>
                 <h2 className='m-5'>Portfolio</h2>
             </div>
             <section className='portfolio'>

@@ -127,9 +127,58 @@ section {
   border-radius: 5px;
 }
 
+.resume .cert-item h5 {
+  font-size: 16px;
+  background: violet;
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 500;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  width: max-content;
+  text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: none;
+  margin-right: 5px;
+}
+
+.resume .skill-item h5 {
+  font-size: 16px;
+  background: orange;
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 500;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  width: max-content;
+  text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: none;
+  margin-right: 5px;
+}
+
+.resume .hskill-item h5 {
+  font-size: 16px;
+  background: lightskyblue;
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 500;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  width: max-content;
+  text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: none;
+  margin-right: 5px;
+}
+
 .sum {
   padding-left: 30px;
   margin-top: 15px;
+}
+
+.cert-link {
+  text-decoration: none;
 }
 
 .edu {
@@ -237,13 +286,23 @@ section {
   }
 }
 
-/* .paper-contact {
-  width: 50vw;
-} */
+.paper-contact {
+  height: 400px;
+}
 
 .paper-info {
+  height: 400px;
   padding-top: 37px;
-  /* padding-bottom: 10px; */
+  background-color: #006400;
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 700;
+}
+
+.paper-info h4 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 700;
+
 }
 
 .icon {
@@ -258,4 +317,8 @@ section {
 .likestar {
   font-size: 10px;
   color: black;
+}
+
+.contact-pb {
+  padding-bottom: 30px;
 }
