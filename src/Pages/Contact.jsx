@@ -37,7 +37,7 @@ const Contact = () => {
                 <Container elevation={3} className='paper-info'>
                     <div class="text-start row ps-4 contact-pb">
                         <div className="col-2">
-                            <PlaceIcon style={{ fontSize: '75px', color: 'white' }} className='icon' />
+                            <PlaceIcon style={{ fontSize: '55px', color: 'white' }} className='icon' />
                         </div>
                         <div className="col-10 ps-4">
                             <h4 className='mt-3'>Location:</h4>
@@ -46,7 +46,7 @@ const Contact = () => {
                     </div>
                     <div class="text-start row ps-4 contact-pb">
                         <div className="col-2">
-                            <MailOutlineIcon style={{ fontSize: '75px', color: 'white' }} className='icon' />
+                            <MailOutlineIcon style={{ fontSize: '55px', color: 'white' }} className='icon' />
                         </div>
                         <div className="col-10 ps-4">
                             <h4 className='mt-2'>E-Mail:</h4>
@@ -55,7 +55,7 @@ const Contact = () => {
                     </div>
                     <div class="text-start row ps-4 contact-pb">
                         <div className="col-2">
-                            <LocalPhoneIcon style={{ fontSize: '75px', color: 'white' }} className='icon' />
+                            <LocalPhoneIcon style={{ fontSize: '55px', color: 'white' }} className='icon' />
                         </div>
                         <div className="col-10 ps-4">
                             <h4 className='mt-1'>Phone:</h4>
