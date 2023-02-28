@@ -21,12 +21,12 @@ const categoryOption = [
     "Business",
     "Career",
     "Cinema",
-    "Cooking",
     "Design",
     "Ecology",
     "EdTech",
     "Education",
     "Entertainment",
+    "Food",
     "Health",
     "History",
     "Music",
@@ -102,7 +102,7 @@ const Addblog = () => {
                 <h1 className='mb-5'>Create Your Blog Post</h1>
 
                 <div className="col-8 m-auto">
-                    <Paper elevation={3} className='paper-contact pb-3 pt-3 px-2'>
+                    <Paper elevation={3} className='paper-post pb-3 pt-3 px-2'>
 
                         <Box
                             component="form"

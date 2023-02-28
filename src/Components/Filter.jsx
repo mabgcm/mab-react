@@ -34,8 +34,7 @@ const Filter = ({ categoryOption }) => {
 
     const [filteredCategory, setFilteredCategory] = useState("");
     const [blogposts, setBlogposts] = useState([]);
-    const [categoryCounts, setCategoryCounts] = useState({});
-
+    const [availableCategories, setAvailableCategories] = useState([]);
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
@@ -64,6 +63,26 @@ const Filter = ({ categoryOption }) => {
         return unsubscribe;
     }, [filteredCategory]);
 
+    useEffect(() => {
+        const categoryCounts = {};
+
+        // Query the blogpost collection and count the number of articles for each category
+        const unsubscribe = onSnapshot(collection(db, 'blogpost'), (snapshot) => {
+            snapshot.docs.forEach((doc) => {
+                const category = doc.data().category;
+                categoryCounts[category] = (categoryCounts[category] || 0) + 1;
+            });
+
+            // Filter the categories that have at least one article associated with them
+            const availableCategories = Object.keys(categoryCounts).filter(
+                (category) => categoryCounts[category] > 0
+            );
+            setAvailableCategories(availableCategories);
+        });
+
+        return unsubscribe;
+    }, []);
+
     return (<>
         <Box sx={{ minWidth: 120 }}>
             <FormControl
@@ -78,8 +97,8 @@ const Filter = ({ categoryOption }) => {
                     label="Categories"
                     onChange={handleChange}
                 >
-                    {categoryOption.map((category, index) => (
-                        <MenuItem value={category} onClick={handleOpen}>{category}</MenuItem>
+                    {availableCategories.map((category) => (
+                        <MenuItem key={category} value={category} onClick={handleOpen}>{category}</MenuItem>
                     ))}
 
                 </Select>

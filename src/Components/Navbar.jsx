@@ -195,7 +195,7 @@ function Navbar() {
                         </Container> : <Container>
                             <Link style={{ textDecoration: 'none', color: 'white', fontWeight: '700' }} to='https://www.linkedin.com/in/mattalibugucam/' target='_blank'><LinkedInIcon style={{ marginRight: '5px' }} /></Link>
                             <Link style={{ textDecoration: 'none', color: 'white', fontWeight: '700' }} to='https://github.com/mabgcm' target='_blank'><GitHubIcon /></Link>
-                            {/* <LoginIcon onClick={handleGoogleSignIn} style={{ color: 'lightgreen', marginLeft: '10px', cursor: 'pointer' }} /> */}
+                            <LoginIcon onClick={handleGoogleSignIn} style={{ color: 'lightgreen', marginLeft: '10px', cursor: 'pointer' }} />
                         </Container>}
 
                         <Menu

@@ -290,6 +290,10 @@ section {
   height: 400px;
 }
 
+.paper-post {
+  height: fit-content;
+}
+
 .paper-info {
   height: 400px;
   padding-top: 37px;
