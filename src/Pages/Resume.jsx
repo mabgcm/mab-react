@@ -236,6 +236,7 @@ const Resume = () => {
                                 <Link sx={{ textDecoration: 'none', color: 'black', }} href='https://www.linkedin.com/learning/certificates/7067e4000f4d5975feee851c9e5df8cc86cd4da826cc6dbdb3a441099e29bc3b' target='_blank'><h5 className='shdw'>React</h5></Link>
                                 <Link sx={{ textDecoration: 'none', color: 'black', }} href='https://www.linkedin.com/learning/certificates/c79a0e57d1b40a248f6dea8f42bf58fe48b85f3082c3cbd599199fa9d5576b54' target='_blank'><h5 className='shdw'>Angular</h5></Link>
                                 <Link sx={{ textDecoration: 'none', color: 'black', }} href='https://www.linkedin.com/learning/certificates/8dddc3c336e8bbe41867023d9387b0b2540cca490bb1bc2f9ec9ef3a9d73c749' target='_blank'><h5 className='shdw'>Node.js</h5></Link>
+                                <Link sx={{ textDecoration: 'none', color: 'black', }} href='https://www.linkedin.com/learning/certificates/9f415cca81e4b087c74091413e463c737a4644c5ac3ccce69319baa8736d8fd9' target='_blank'><h5 className='shdw'>MongoDB</h5></Link>
                             </div>
                         </div>
                     </div>
