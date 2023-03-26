@@ -4,12 +4,12 @@ import { getAuth } from 'firebase/auth';
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-    apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
-    authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
-    projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
-    storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
-    messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
-    appId: process.env.REACT_APP_FIREBASE_APP_ID,
+    apiKey: "AIzaSyCLZL5hK5y023SSlbDqfwwswVQOE39bzDA",
+    authDomain: "blog-84368.firebaseapp.com",
+    projectId: "blog-84368",
+    storageBucket: "blog-84368.appspot.com",
+    messagingSenderId: "485296780611",
+    appId: "1:485296780611:web:1e693a763afaad0b66abf6",
     // measurementId: "G-5E0EYBDM7H"
 };
 
