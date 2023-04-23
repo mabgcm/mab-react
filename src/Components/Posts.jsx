@@ -27,7 +27,7 @@ const Posts = () => {
 
     return (
         <div className="col-lg-4 border-start custom-border">
-            {blogs.slice(1, 4).map(({ id, title, category, parag1, caption, image1, likes, timestamp }) => (
+            {blogs.slice(1, 4).map(({ id, title, category, image1, timestamp }) => (
                 <div className="post-entry-1" key={id}>
                     <Link to={`/blogpost/${id}`}><img src={image1} alt="" className="img-fluid" /></Link>
                     <div className="post-meta"><span className="date">{category}</span> <span className="mx-1"><CircleIcon fontSize='xsmall' /></span> <span>{new Date(timestamp?.toDate()).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: '2-digit' }).toUpperCase()}</span></div>

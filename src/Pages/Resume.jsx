@@ -103,12 +103,8 @@ const Resume = () => {
                             </div>
                             <div className="col-9 edu">
                                 <div className="resume-item">
-                                    <h5>Master's of Education</h5>
-                                    <h6>University of Essex, UK - <em>August 2020 - September 2023</em></h6>
-                                </div>
-                                <div className="resume-item">
                                     <h5 className='shdw' onClick={handleOpen3}>Full-Stack Bootcamp</h5>
-                                    <h6>Clarusway LLC, (Remote-USA) - <em>January 2022 - October 2022</em></h6>
+                                    <h6>Clarusway LLC, (Remote-USA)</h6>
                                     <p><Link href='https://www.clarusway.com' target='_blank' >Go to bootcamp's website</Link></p>
                                     <Modal
                                         open={open3}
@@ -121,7 +117,7 @@ const Resume = () => {
                                             <Typography id="clarusway" variant="h6" component="h2">
                                                 <CloseIcon className='closeButton' onClick={handleClose3} />
                                                 <h3>Full-Stack Bootcamp</h3>
-                                                <h6>Clarusway LLC, (Remote-USA) - <em>January 2020 - September 2021</em></h6>
+                                                <h6>Clarusway LLC, (Remote-USA)</h6>
                                             </Typography>
                                             <Typography id="cls" sx={{ mt: 2 }}>
                                                 <ul>
@@ -138,7 +134,7 @@ const Resume = () => {
                                 </div>
                                 <div className="resume-item">
                                     <h5>Bachelor of Applied Science, Linguistics,</h5>
-                                    <h6>Mersin University, Turkey - <em>September 2005 - June 2009</em></h6>
+                                    <h6>Mersin University, Turkey</h6>
                                 </div>
                             </div>
                         </div>
