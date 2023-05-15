@@ -41,7 +41,7 @@ const Contact = () => {
                         </div>
                         <div className="col-10 ps-4">
                             <h4 className='mt-3'>Location:</h4>
-                            <p>Saint John, New Brunswick, Canada</p>
+                            <p>Vaughan, ON, Canada</p>
                         </div>
                     </div>
                     <div class="text-start row ps-4 contact-pb">
@@ -59,7 +59,7 @@ const Contact = () => {
                         </div>
                         <div className="col-10 ps-4">
                             <h4 className='mt-1'>Phone:</h4>
-                            <p>+1 (506) 349-3512</p>
+                            <p>+1 (437) 219-6444</p>
                         </div>
                     </div>
                 </Container>

@@ -179,9 +179,12 @@ function Navbar() {
                                 <Link style={{ textDecoration: 'none', color: 'white', fontWeight: '700' }} to={`/${page}`}>{page}</Link>
                             </Button>
                         ))}
-                        {user && <Button>
+                        {/* {user && <Button>
                             <Link style={{ textDecoration: 'none', color: 'white', fontWeight: '700' }} to='/account'>Blog</Link>
-                        </Button>}
+                        </Button>} */}
+                        <Button>
+                            <Link style={{ textDecoration: 'none', color: 'white', fontWeight: '700' }} to='/account'>Blog</Link>
+                        </Button>
                     </Box>
 
                     <Box sx={{ flexShrink: 0 }}>

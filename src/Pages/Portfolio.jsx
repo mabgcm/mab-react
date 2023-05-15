@@ -5,7 +5,7 @@ import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
-import lmc from '../assets/img/lmc.png';
+import perla from '../assets/img/web1.jpg';
 import yba from '../assets/img/yba.png';
 import lms from '../assets/img/lms.png';
 import cam from '../assets/img/cam.png';
@@ -55,11 +55,11 @@ const Portfolio = () => {
             img: yba
         },
         {
-            name: "Translated React Web App",
-            skills: "React (18.2.0), React-Intl (6.2.5), Reactstrap (9.1.5), React-Bootstrap (2.6.0)",
-            description: "A web app that allows users to translate words and phrases into different languages. The app is built with React and utilizes the APIs from Yandex Translate to perform the translations. The user interface is simple and intuitive, making it easy for users to translate text quickly and efficiently.",
-            link: "https://lmcpanama.com",
-            img: lmc
+            name: "Bootstrap U/I design",
+            skills: "HTML, CSS, Bootsrtap 4.0",
+            description: "This website showcases the expertise in UI design using Bootstrap. I utilized HTML, CSS, and Bootstrap 4.0 to create a visually stunning and highly responsive user interface. The layout, color scheme, and typography were meticulously chosen to deliver an intuitive and user-friendly experience. With Bootstrap's powerful front-end framework, we ensured that the website performs seamlessly across all devices and platforms. From a sleek and modern design to intuitive navigation, every aspect of the website has been optimized for maximum engagement.",
+            link: "https://perlanera.ca",
+            img: perla
         },
         {
             name: "React Web App",

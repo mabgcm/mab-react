@@ -25,12 +25,12 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='Resume' element={<Resume />} />
           <Route path='Portfolio' element={<Portfolio />} />
-          <Route path='account' element={<Protected><Account /></Protected>} />
-          <Route path='blogpost/:id' element={<Protected><Blogpost /></Protected>} />
+          <Route path='account' element={<Protected disabled={true}><Account /></Protected>} />
+          <Route path='blogpost/:id' element={<Protected disabled={true}><Blogpost /></Protected>} />
           <Route path='addblog' element={<Protected><Addblog /></Protected>} />
-          <Route path='recentpost' element={<Protected><RecentPost /></Protected>} />
-          <Route path='posts' element={<Protected><Posts /></Protected>} />
-          <Route path='posts2' element={<Protected><Posts2 /></Protected>} />
+          <Route path='recentpost' element={<Protected disabled={true}><RecentPost /></Protected>} />
+          <Route path='posts' element={<Protected disabled={true}><Posts /></Protected>} />
+          <Route path='posts2' element={<Protected disabled={true}><Posts2 /></Protected>} />
           <Route path='comment' element={<Protected><Comment /></Protected>} />
           <Route path='likes' element={<Protected><Likes /></Protected>} />
           <Route path='Contact' element={<Contact />} />

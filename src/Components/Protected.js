@@ -2,9 +2,9 @@ import React from 'react';
 import { Navigate } from 'react-router-dom';
 import { UserAuth } from '../context/AuthContext';
 
-const Protected = ({ children }) => {
+const Protected = ({ children, disabled }) => {
     const { user } = UserAuth();
-    if (!user) {
+    if (!disabled && !user) {
         return <Navigate to='/' />;
     }
     return children

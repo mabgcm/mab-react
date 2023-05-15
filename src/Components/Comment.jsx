@@ -97,7 +97,7 @@ const Comment = ({ id }) => {
                                                 <h6 className="ps-1 pt-2 me-2">{userName}<span className="text-muted ps-3">{getTimePassed(createdAt)} ago</span></h6>
                                             </div>
                                             <div className="col-1 ">
-                                                {user === currentlyLoggedinUser.uid && (
+                                                {user === currentlyLoggedinUser?.uid && (
                                                     <DeleteIcon
                                                         className="fa fa-times"
                                                         style={{ cursor: "pointer" }}
