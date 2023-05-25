@@ -84,6 +84,9 @@ const Blogpost = () => {
                                     <p>{article.parag8}</p>
                                     <p>{article.parag9}</p>
                                     <p>{article.parag10}</p>
+                                    <p>{article.parag11}</p>
+                                    <p>{article.parag12}</p>
+                                    <p>{article.parag13}</p>
                                 </div>
 
 
