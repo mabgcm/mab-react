@@ -52,7 +52,7 @@ const Resume = () => {
                                 <h3 className="resume-title text-end">Summary:</h3>
                             </div>
                             <div className="col-9 pt-2 sum">
-                                <h5>Matt is a Frontend Developer with over 5 years of experience in the field. Matt has worked as a Frontend Developer at Tower Cambridge and has developed web pages leading to a 30% increase in user engagement and retention. He also worked as an ESL & ICT Teacher in Vietnam and taught approximately 2400 hours over 3 years.</h5>
+                                <h5>Matt is a Full Stack Developer 5 years of experience in HTML5, CSS3, SASS(SCSS), Bootstrap-5, JavaScript ES6, React.js, Redux, Material UI, Linux, SQL, Git & GitHub, Python, APIs, RESTful APIs, Firebase, Django, Agile, and Jira. He has also strong analytical thinking, project management, and communication skills, along with a coaching mindset and resilience to adapt to new environments.</h5>
                             </div>
                         </div>
 
