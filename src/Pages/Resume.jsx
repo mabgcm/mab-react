@@ -30,12 +30,15 @@ const Resume = () => {
     const [open, setOpen] = useState(false);
     const [open2, setOpen2] = useState(false);
     const [open3, setOpen3] = useState(false);
+    const [open4, setOpen4] = useState(false);
     const handleOpen = () => setOpen(true);
     const handleOpen2 = () => setOpen2(true);
     const handleOpen3 = () => setOpen3(true);
+    const handleOpen4 = () => setOpen4(true);
     const handleClose = () => setOpen(false);
     const handleClose2 = () => setOpen2(false);
     const handleClose3 = () => setOpen3(false);
+    const handleClose4 = () => setOpen4(false);
 
 
     return (
@@ -144,6 +147,34 @@ const Resume = () => {
                                 <h3 className="resume-title text-end">Experience:</h3>
                             </div>
                             <div className="col-9 edu">
+                                <div className="resume-item">
+                                    <h5 className='shdw' onClick={handleOpen4}>Front End Developer</h5>
+                                    <h6>Perla Nera Construction Inc, (Toronto-Canada) - <em>March 2023 - Present</em></h6><p><Link href='https://perlanera.ca' target='_blank' >Go to employer's website</Link></p>
+                                    <Modal
+                                        open={open4}
+                                        onClose={handleClose4}
+                                        aria-labelledby="tower"
+                                        aria-describedby="twr"
+                                    >
+                                        <Box sx={style}>
+                                            <Typography id="tower" variant="h6" component="h2">
+                                                <CloseIcon className='closeButton' onClick={handleClose4} />
+                                                <h3>Front End Developer</h3>
+                                                <h6>Perla Nera Construction Inc, (Toronto-Canada) - <em>March 2023 - Present</em></h6>
+                                            </Typography>
+                                            <Typography id="twr" sx={{ mt: 2 }}>
+                                                <ul>
+                                                    <li>Designed and developed the company's website, using Bootstrap to optimize the website for responsiveness and seamless user experience across different devices and screen sizes.</li>
+                                                    <li>Collaborated with a cross-functional team to develop custom software applications and web-based systems tailored to the needs of construction project management.</li>
+                                                    <li>Developed web-based interfaces and applications that interacted with BIM data.</li>
+                                                    <li>Played a key role in developing front-end interfaces for construction estimating software.</li>
+                                                    <li>Collaborated closely with back-end developers and stakeholders to create intuitive user interfaces, enabling contractors to input project details, generate accurate cost estimates, and track costs effectively.</li>
+                                                </ul>
+                                            </Typography>
+                                        </Box>
+                                    </Modal>
+                                </div>
+
                                 <div className="resume-item">
                                     <h5 className='shdw' onClick={handleOpen2}>Front End Developer</h5>
                                     <h6>Tower Cambridge, (Remote-Vietnam) - <em>August 2017 - Present</em></h6><p><Link href='https://towercambridge.com' target='_blank' >Go to employer's website</Link></p>
